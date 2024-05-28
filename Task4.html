@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const num1 = parseInt(prompt("Enter the number 1"));
+        const operator = prompt("Enter the operator (+, -, %, /, *)");
+        const num2 = parseInt(prompt("Enter the number 2"));
+
+        switch(operator)
+        {
+            case "+":
+                console.log(num1 + num2);
+                break;
+            case "-" : 
+                console.log(num1 - num2);
+                break;
+            case "*" : 
+                console.log(num1 * num2);
+                break;
+            case "/" : 
+                console.log(num1 / num2);
+                break;
+            case "%" : 
+                console.log(num1 % num2);
+                break;
+            default :
+                console.log('wrong symbol');
+        }
+    </script>
+</body>
+</html>

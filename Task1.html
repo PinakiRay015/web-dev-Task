@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let A = parseInt(prompt("Enter the 1st number"));
+        let B = parseInt(prompt("Enter the 2nd number"));
+        console.log(`The value of A and B before reversing is ${A} and ${B}`);
+        A = A + B;
+        B = A - B;
+        A = A - B;
+        console.log(`The value of A and B after reversing is ${A} and ${B}`);
+        console.log(`The doubled values of ${A} and ${B} is ${Math.pow(A, 2)} and ${Math.pow(B, 2)}`);
+    </script>
+</body>
+</html>
