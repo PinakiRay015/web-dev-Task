@@ -1,3 +1,4 @@
+//Javascript program to create ATM an machine system to perform withdraw and deposite action5
 const prompt = require('prompt-sync')();
 let currentBalance = 1000;
 
