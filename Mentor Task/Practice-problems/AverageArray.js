@@ -1,3 +1,4 @@
+//Javascript program to find the average of an array elements. i.e (sum of all the elements of an array) / length of array
 let array = [10,20,30,40,50];
 
 //creating function to find the sum of elements of an array. I used enhanced for loop here. (For each)
