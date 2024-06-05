@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      th {
+        padding: 0.4rem 0.8rem;
+        background-color: crimson;
+      }
+
+      td {
+        text-align: left;
+        padding: 0.2rem;
+        background-color: #dbebf5;
+      }
+      th#miniHead {
+        background-color: gray;
+      }
+
+      td#Error {
+        background-color: red;
+        color: white;
+      }
+
+      td#Empty {
+        background-color: gray;
+      }
+
+      td#FORECAST {
+        background-color: orange;
+      }
+      td#mini {
+        background-color: darkgray;
+      }
+    </style>
+    <table>
+      <tr>
+        <th rowspan="2">Sort</th>
+        <th rowspan="2">Start sort</th>
+        <th rowspan="2">End sort</th>
+        <th colspan="2">SML</th>
+        <th colspan="2">OVH</th>
+        <th colspan="2">NCS</th>
+        <th colspan="2">LP</th>
+        <th rowspan="2">Prime length</th>
+        <th rowspan="2">Wrap length</th>
+        <th rowspan="2">segment length</th>
+        <th rowspan="2">Segment TPUT-</th>
+      </tr>
+      <tr>
+        <th id="miniHead">GND</th>
+        <th id="miniHead">AIR</th>
+        <th id="miniHead">GND</th>
+        <th id="miniHead">AIR</th>
+        <th id="miniHead">GND</th>
+        <th id="miniHead">AIR</th>
+        <th id="miniHead">GND</th>
+        <th id="miniHead">AIR</th>
+      </tr>
+      <tr>
+        <td rowspan="3">Day</td>
+        <td>7:00AM</td>
+        <td>11:00AM</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0:00</td>
+        <td>0:00</td>
+        <td>2.5 hours-9:00-11:30</td>
+        <td>1000076</td>
+      </tr>
+      <tr>
+        <td>12:00PM</td>
+        <td>01:00PM</td>
+        <td>200</td>
+        <td>200</td>
+        <td>200</td>
+        <td>200</td>
+        <td>200</td>
+        <td>200</td>
+        <td>200</td>
+        <td>200</td>
+        <td>0.00</td>
+        <td>0.00</td>
+        <td>2.5 hours-9:00-11:30</td>
+        <td>1000076</td>
+      </tr>
+      <tr>
+        <td>12:00PM</td>
+        <td>01:00PM</td>
+        <td>200</td>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>200</td>
+        <td>200</td>
+        <td>200</td>
+        <td>200</td>
+        <td>0.00</td>
+        <td>0.00</td>
+        <td>2.5 hours-9:00-11:30</td>
+        <td>1000076</td>
+      </tr>
+      <tr>
+        <td id="Error">Errors</td>
+        <td style="text-align: left;" id="time" colspan="14">Time gap exceed 30 minutes</td>
+      </tr>
+      <tr>
+        <td id="Empty" colspan="3">Empty</td>
+        <td id="Empty">200</td>
+        <td id="Empty">200</td>
+        <td id="Empty">200</td>
+        <td id="Empty">200</td>
+        <td id="Empty">200</td>
+        <td id="Empty">200</td>
+        <td id="Empty">200</td>
+        <td id="Empty">200</td>
+      </tr>
+      <tr>
+        <td id="FORECAST" colspan="3">
+          FORECAST - Total must match to proceed
+        </td>
+        <td id="FORECAST">200</td>
+        <td id="FORECAST">200</td>
+        <td id="FORECAST">200</td>
+        <td id="FORECAST">200</td>
+        <td id="FORECAST">200</td>
+        <td id="FORECAST">200</td>
+        <td id="FORECAST">200</td>
+        <td id="FORECAST">200</td>
+      </tr>
+      <tr>
+        <td id="mini">Gap</td>
+        <td id="mini">1 Hours(s)</td>
+        <td id="mini">30 Min(s)</td>
+      </tr>
+    </table>
+  </body>
+</html>
