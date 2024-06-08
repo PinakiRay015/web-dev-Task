@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      font-family: "Noto Sans", sans-serif;
+      margin: 0px;
+    }
+
+    navbar.container {
+      display: flex;
+      align-items: center;
+      background-color: #f5f5f7;
+      justify-content: center;
+      height: 44px;
+      gap: 4rem;
+    }
+
+    nav#nav1 {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+      font-size: 12px;
+    }
+
+    nav#nav1 li{
+        cursor: pointer;
+        color: gray;
+        font-weight: 600;
+    }
+
+    nav#nav1 li:hover{
+        color: black;
+        transition: all 0.2s ease-in;
+    }
+
+    img {
+      width: 17px;
+    }
+
+    nav#nav2 {
+      display: flex;
+      gap: 1rem;
+    }
+  </style>
+  <body>
+    <navbar class="container">
+      <img src="assets/apple.svg" alt="" />
+      <nav id="nav1">
+        <li>Store</li>
+        <li>Mac</li>
+        <li>iPad</li>
+        <li>iPhone</li>
+        <li>Watch</li>
+        <li>AirPods</li>
+        <li>TV & Home</li>
+        <li>Entertainment</li>
+        <li>Accessories</li>
+        <li>Support</li>
+      </nav>
+      <nav id="nav2">
+        <img src="assets/search.svg" alt="" />
+        <img src="assets/bag.png" alt="" />
+      </nav>
+    </navbar>
+  </body>
+</html>
