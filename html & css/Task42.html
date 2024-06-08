@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <style>
+    body{
+        font-family: "Poppins", sans-serif;
+        display: grid;
+        height: 100vh;
+        place-items: center;
+    }
+    .container {
+      width: 360px;
+      display: flex;
+      justify-content: center;
+      box-shadow: 1px 1px 10px black;
+      padding: 2rem 0.4rem;
+      border-radius: 2rem;
+    }
+    .container h2{
+        font-size: 24px;
+        margin: 0px;
+    }
+
+    .container form{
+        display: grid;
+        place-items: center;
+    }
+
+    .container form input{
+        height: 48px;
+        width: 312px;
+        border-radius: 10px;
+        border: 1px solid gray;
+        padding: 0rem 0.3rem;
+        font-size: 12px;
+    }
+
+    .container #forgetPass{
+        color: #2F89FC;
+        margin-top: -10px;
+        font-size: 14px;
+    }
+
+    .container #loginButton{
+        width: 320px;
+        height: 48px;
+        border-radius: 10px;
+        border: 1px solid gray;
+        background-color: #0E64D2;
+        color: white;
+        font-size: 14px;
+    }
+
+    .container #signup{
+        font-size: 14px;
+    }
+    
+    .container #signup span{
+      color: #2F89FC;
+      font-weight: bold;
+    }
+
+    .container .socialAccount{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .container .socialAccount button{
+        height: 48px;
+        width: 312px;
+        border-radius: 10px;
+        border: 1px solid gray;
+    }
+
+    .container #facebook{
+        background-color: #0E64D2;
+        color: white;
+        font-size: 14px;
+    }
+
+    .container .or{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      width: 100%;
+      color: gray;
+    }
+
+    .container .or div{
+      background-color: rgb(206, 205, 205);
+      height: 0.1rem;
+      width: 100%;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <form action="">
+        <h2>Login</h2>
+        <h2>welcome back</h2>
+        <input type="email" placeholder="Enter your username" /><br />
+        <input type="password" placeholder="Enter your password" /><br />
+        <p id="forgetPass">Forgot password</p>
+        <button id="loginButton" type="button">Login</button>
+        <p id="signup">Don't have an account ? <span>Sign up</span></p>
+        <div class="or">
+          <div></div>
+          <p>or</p>
+          <div></div>
+        </div>
+
+        <div class="socialAccount">
+          <button id="facebook">Login with facebook</button>
+          <button id="google">Login with google</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
