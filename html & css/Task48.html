@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        position: relative;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+    .box{
+        background-color: crimson;
+        position: absolute;
+        width: 100%;
+        color: white;
+        display: grid;
+        place-items: center;
+    }
+
+    header{
+        top: 0px;
+    }
+
+    main{
+        height: 20rem;
+
+    }
+
+    footer{
+        bottom: 0px;
+    }
+</style>
+<body>
+    <div class="container">
+        <header class="box">This is navbar</header>
+        <main class="box">This is main section</main>
+        <footer class="box">This is footer section</footer>
+    </div>
+</body>
+</html>
