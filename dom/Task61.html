@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p>Hello developers</p>
+    </div>
+
+    <script>
+        let newElement = document.createElement('p')
+        newElement.innerHTML = "Nice to meet you"
+        let container = document.querySelector('.container');
+        container.appendChild(newElement);
+    </script>
+</body>
+</html>
