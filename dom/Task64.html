@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="navbar bg-black text-white flex justify-between items-center px-5 py-2">
+        <div class="flex items-center gap-2">
+            <i class="toggleMenu fa-solid fa-bars text-xl md:hidden cursor-pointer"></i>
+            <h1 class="font-bold text-2xl cursor-pointer">Brand</h1>
+        </div>
+        <ul class="hidden md:flex flex gap-2 capitalize">
+            <li class="cursor-pointer text-zinc-300 hover:text-zinc-100">about</li>
+            <li class="cursor-pointer text-zinc-300 hover:text-zinc-100">blogs</li>
+            <li class="cursor-pointer text-zinc-300 hover:text-zinc-100">careers</li>
+            <li class="cursor-pointer text-zinc-300 hover:text-zinc-100">support</li>
+            <li class="cursor-pointer text-zinc-300 hover:text-zinc-100">contact</li>
+        </ul>
+
+        <div class="buttons">
+            <button class="px-2 py-1">Login</button>
+            <button class="px-2 py-1 bg-violet-600 rounded">Get started</button>
+        </div>
+    </div>
+
+    <div class="mobileNav absolute w-full md:hidden bg-black" style="top: -400px;">
+        <li class="cursor-pointer list-none px-5 leading-10 text-zinc-300 hover:text-zinc-100">about</li>
+        <li class="cursor-pointer list-none px-5 leading-10 text-zinc-300 hover:text-zinc-100">blogs</li>
+        <li class="cursor-pointer list-none px-5 leading-10 text-zinc-300 hover:text-zinc-100">careers</li>
+        <li class="cursor-pointer list-none px-5 leading-10 text-zinc-300 hover:text-zinc-100">support</li>
+        <li class="cursor-pointer list-none px-5 leading-10 text-zinc-300 hover:text-zinc-100">contact</li>
+    </div>
+
+    <script>
+        const toggleMenu = document.querySelector('.toggleMenu');
+        const mobileMenu = document.querySelector('.mobileNav')
+
+        toggleMenu.addEventListener('click' , () =>{
+            mobileMenu.style.top == '-400px' ? mobileMenu.style.top = '40px' : mobileMenu.style.top = '-400px'
+        })
+    </script>
+</body>
+</html>
