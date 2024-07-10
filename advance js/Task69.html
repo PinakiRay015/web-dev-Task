@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>progress bar</title>
+  </head>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+    }
+
+    .box {
+      width: 70vw;
+      height: 2rem;
+      border: 1px solid;
+      border-radius: 10px;
+      background-color: grey;
+    }
+
+    .box .miniBox {
+      width: 0%;
+      height: 100%;
+      background-color: crimson;
+      border-radius: 10px;
+    }
+
+    p{
+        color: white;
+        text-align: right;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 2rem;
+        margin: 10px 0px;
+    }
+
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="miniBox"></div>
+        <p><span>0</span>%</p>
+      </div>
+    </div>
+
+    <script>
+      const miniBox = document.querySelector(".miniBox");
+      const percentage = document.querySelector('span')
+      let width = 0;
+
+      function createProgressFunction(updateFunc, interval, condition) {
+        return function progress() {
+          if (condition()) {
+            setTimeout(() => {
+              updateFunc();
+              progress();
+            }, interval);
+          }
+        };
+      }
+
+      const updateWidth = () => {
+        width += 10;
+        percentage.innerHTML = width;
+        miniBox.style.width = `${width}%`;
+      };
+
+      const condition = () => width < 100;
+
+      const progress = createProgressFunction(updateWidth, 1000, condition);
+      progress();
+    </script>
+  </body>
+</html>
